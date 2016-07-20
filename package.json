@@ -4,8 +4,9 @@
   "description": "Content Management System Project",
   "main": "script.js",
   "scripts": {
+    "heroku": "node server.js",
     "test": "node test/*",
-    "start": "node server.js"
+    "start": "DATABASE_URL=postgres:///cms node server.js"
   },
   "repository": {
     "type": "git",
