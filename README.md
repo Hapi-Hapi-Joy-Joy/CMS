@@ -13,3 +13,6 @@ A basic CMS inspired by Node Girls Express Workshop using Hapi and Sass.
 * Tests/ Sass
 * Authentication + multiple users.
 
+## Quick Start
+
+Git clone the repo, and ```npm install``` in your command line to run Hapi, Inert, Tape and Shot.
