@@ -7,7 +7,7 @@ CREATE TABLE users
 (
 ID SERIAL PRIMARY KEY,
 username VARCHAR(20) NOT NULL,
-password VARCHAR(20),
+password VARCHAR(20)
 );
 
 CREATE TABLE blogposts
