@@ -1,11 +1,10 @@
 const Hapi=require("hapi");
 const Inert=require("inert");
 const routes=require('./lib/routes.js')
-const Connection = require("hapi-postgres-connection");
 
 const server=new Hapi.Server();
 
-server.register([Connection, Inert], (err) => {
+server.register(Inert, (err) => {
   if (err) console.log(err);
   server.connection({
     port: process.env.PORT || 3000
