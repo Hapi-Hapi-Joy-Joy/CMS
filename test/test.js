@@ -2,7 +2,7 @@ const test = require("tape");
 const server = require('../server.js');
 
 test("'/' return 200 statusCode", t => {
-  server.inject({method: 'Get', url: '/'}, function (res) {
+  server.inject({method: 'GET', url: '/'}, function (res) {
     t.equal(res.statusCode, 200, 'page loaded successfully');
     t.end();
   });
@@ -23,6 +23,16 @@ test("'/getPosts' returns a post", t => {
     t.end();
   });
 });
+
+//make the test for PUT
+// test("'/updatePosts' returns an updated post", t => {
+//   var payload = {post: 'new info'};
+//   server.inject({method: 'PUT', url: '/updatePosts', payload}, function (res) {
+//     change the below deepEqal to be 'includes'
+//     t.deepEqual(payload.post, 'new info', 'blog post successfully updated');
+//     t.end();
+//   });
+// });
 
 test("'/{file*}' returns 200 statusCode", t => {
   server.inject({ method: 'Get', url: '/main.css' },
