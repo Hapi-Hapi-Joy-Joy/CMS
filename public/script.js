@@ -4,6 +4,10 @@ const postButton = document.getElementById('post-button');
 
 function createPost() {
   const xhr = new XMLHttpRequest();
+  const postObj = {
+    title: postTitle.value,
+    content: postContent.value
+  }
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       postTitle.value = '';
@@ -12,7 +16,7 @@ function createPost() {
   }
   if (PostContent.value === '') return;
   xhr.open("POST", "/createPost", true);
-  xhr.send();
+  xhr.send(JSON.stringify(postObj));
 }
 
 function getPosts() {
@@ -26,4 +30,4 @@ function getPosts() {
 }
 
 // window.addEventListener('load', getPosts);
-// postButton.addEventListener('click', createPost);
+postButton.addEventListener('click', createPost);
