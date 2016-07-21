@@ -2,6 +2,11 @@
 
 A basic CMS inspired by Node Girls Express Workshop using Hapi and Sass.
 
+## Endpoints
+
+/getPosts (GET request)
+/createPost (POST request)
+
 ## How
 
 * Create HMTL Form Content (create post)
