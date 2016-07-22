@@ -35,7 +35,7 @@ test("'/getPosts' returns a post", t => {
 // });
 
 test("'/{file*}' returns 200 statusCode", t => {
-  server.inject({ method: 'Get', url: '/main.css' },
+  server.inject({ method: 'Get', url: '/styles.css' },
   res => {
     t.equal(res.statusCode, 200, 'static file retieved');
     t.end();
