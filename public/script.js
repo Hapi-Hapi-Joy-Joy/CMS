@@ -69,7 +69,7 @@ function getPosts() {
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       const postObj = JSON.parse(xhr.response);
-      console.log(postObj)
+      console.log(postObj);
       addNewPost(postObj);
     }
   }
