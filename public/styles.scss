@@ -1,85 +1,15 @@
+@import 'variables';
+@import 'navigation';
+@import 'form';
+@import 'buffer';
+@import 'blog';
+@import 'footer';
+
 body {
   margin: 0px;
   font-family: Arial,"Trebuchet MS", Helevetica ,sans-serif;
-  background-color: #67BE4B;
 }
 
-#navigation {
-  box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
-  background-color: white;
-  margin-bottom: 10vh;
-  ul {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-  }
-  li {
-    display: inline-block;
-    padding: 20px;
-  }
-  a {
-    text-decoration: none;
-  }
-  a:link {
-    color: grey;
-  }
-  a:visited {
-    color: grey;
-  }
-  a:hover {
-    color: grey;
-    text-decoration: underline;
-  }
-  a:active {
-    color: grey;
-  }
-}
-
-#formContainer {
-  position: relative;
-  left: 10vw;
-  width: 80vw;
-  height: 80vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 3px 14px -2px rgba(0,0,0,0.75);
-}
-
-#post-title {
-  width: 70vw;
-  height: 10vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  border: none;
-  color: #AFAFAF;
-  text-align: center;
-  font-size: 18px;
-  background-color: #f2f2f2;
-}
-
-#post-content {
-  width: 65vw;
-  height: 35vh;
-  border: none;
-  color: #AFAFAF;
-  font-size: 18px;
-  padding-top: 5vh;
-  padding-left: 5vw;
-  background-color: #f2f2f2;
-}
-
-#post-button {
-  height: 10vh;
-  width: 20vw;
-  border: none;
-  font-size: 18px;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  color: white;
-  background-color: #00B242;
+#header {
+  background-color: #ee6e73;
 }
