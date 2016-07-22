@@ -7,21 +7,81 @@
     <link href="/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div id="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/">Contact</a></li>
-      </ul>
+
+    <div id="header">
+      <div id="navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+      <div id="form-container">
+        <input type="text" id="form-title" value="" autocomplete="off" placeholder="title"/>
+        <textarea id="form-content" rows="8" cols="40" maxlength="800" placeholder="enter your post here"></textarea>
+        <input type="button" id="form-button" value="POST">
+      </div>
     </div>
-    <div id="formContainer">
-        <input type="text" id="post-title" value="" autocomplete="off" placeholder="title"/>
-        <textarea id="post-content" rows="8" cols="40" maxlength="800" placeholder="enter your post here"></textarea>
-        <input type="button" id="post-button" value="POST">
+
+    <div id="buffer">
+      <h2>(=ＴェＴ=)</h2>
+      <h2>(=^‥^=)</h2>
+      <h2>(^._.^)ﾉ</h2>
+      <h2>~(=^‥^)ノ</h2>
     </div>
-    <div class="blog-post-container"></div>
+
+    <div class="blog-post-container">
+      <!-- The following are example posts for purposes of working out the template and styling.
+      Will be removed once server functionality is running. -->
+      <div class="title-container">
+        <h2 class="post-id">#1 </h2>
+        <h2 class="post-title">Hello world</h2>
+      </div>
+      <div class="timestamp-container">
+        <p class="post-user"><b>Hapi Hapi Joi Joi</b></p>
+        <p class="post-timestamp"><b>21.07.2016</b></p>
+      </div>
+      <p class="post-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+        excepturi sint <a href="/">occaecati cupiditate non provident</a>, similique sunt in culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
+        quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+        nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+        facere possimus, <a href="/">omnis voluptas</a> assumenda est, omnis dolor repellendus. Temporibus
+        autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+        ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum
+        rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+        <a href="/">alias consequatur</a> aut perferendis doloribus asperiores repellat.
+      </p>
+      <br><hr>
+      <div class="title-container">
+        <h2 class="post-id">#2 </h2>
+        <h2 class="post-title">Hello world</h2>
+      </div>
+      <div class="timestamp-container">
+        <p class="post-user"><b>Hapi Hapi Joi Joi</b></p>
+        <p class="post-timestamp"><b>21.07.2016</b></p>
+      </div>
+      <p class="post-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+        excepturi sint <a href="/">occaecati cupiditate non provident</a>, similique sunt in culpa
+        qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
+        quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+        nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+        facere possimus, <a href="/">omnis voluptas</a> assumenda est, omnis dolor repellendus. Temporibus
+        autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+        ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum
+        rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+        <a href="/">alias consequatur</a> aut perferendis doloribus asperiores repellat.
+      </p>
+      <br><hr>
+    </div>
+
+    <div id="footer">
+      <p>Hapi Hapi Joi Joi. CMS Project. 2016</p>
+    </div>
     <script src="/script.js" type="text/javascript"></script>
   </body>
 </html>
