@@ -20,7 +20,6 @@ function createPost() {
 }
 
 function addNewPost(post) {
-  post = post.reverse();
   post.forEach((elem) => {
     const blogpostContainer = document.getElementsByClassName("blog-post-container")[0];
 
