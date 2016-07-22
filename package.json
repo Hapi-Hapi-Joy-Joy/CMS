@@ -7,7 +7,8 @@
     "heroku": "node server.js",
     "remotedb": "PGSSLMODE=require DATABASE_URL=postgres://oghbwzecpgqlzn:Eryf0t9izFvFsomMwSf66Zpj-0@ec2-54-243-202-110.compute-1.amazonaws.com:5432/d9fe6tetkoh5e node server.js",
     "test": "node test/*",
-    "start": "DATABASE_URL=postgres:///cms node server.js"
+    "start": "DATABASE_URL=postgres:///cms node server.js",
+    "debug": "node --debug-brk server.js"
   },
   "repository": {
     "type": "git",

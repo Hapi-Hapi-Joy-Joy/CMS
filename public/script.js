@@ -14,7 +14,7 @@ function createPost() {
       postContent.value = '';
     }
   }
-  if (PostContent.value === '') return;
+  if (postContent.value === '') return;
   xhr.open("POST", "/createPost", true);
   xhr.send(JSON.stringify(postObj));
 }
@@ -30,4 +30,7 @@ function getPosts() {
 }
 
 // window.addEventListener('load', getPosts);
-postButton.addEventListener('click', createPost);
+postButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  createPost();
+});
