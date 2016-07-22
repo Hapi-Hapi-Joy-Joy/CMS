@@ -1,0 +1,92 @@
+.blog-post-container {
+  background-color: white;
+  position: relative;
+  left: 10vw;
+  width: 80vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: auto;
+  a {
+    text-decoration: none;
+    color: $post-font-colour;
+  }
+  a:link {
+    color: $post-font-colour;
+  }
+  a:visited {
+    color: $post-font-colour;
+  }
+  a:hover {
+    color: $post-font-colour;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  a:active {
+    color: $post-font-colour;
+  }
+}
+
+@media only screen and (max-width: 561px) {
+  .title-container {
+    width: 100%;
+    .post-id {
+      color: $post-font-colour;
+      display: inline-block;
+      margin-right: 1vw;
+    }
+    .post-title {
+      color: $post-font-colour;
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (min-width: 562px) {
+  .title-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 50%;
+    .post-id {
+      color: $post-font-colour;
+      display: inline-block;
+      margin-right: 1vw;
+    }
+    .post-title {
+      color: $post-font-colour;
+      display: inline-block;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 561px) {
+  .timestamp-container {
+    width: 100%;
+    .post-user {
+      color: $post-font-colour;
+      display: block;
+      margin-right: 2vw;
+    }
+    .post-timestamp {
+      color: $post-font-colour;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 562px) {
+  .timestamp-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 49%;
+    .post-user {
+      color: $post-font-colour;
+      display: inline-block;
+      margin-right: 2vw;
+    }
+    .post-timestamp {
+      color: $post-font-colour;
+      display: inline-block;
+    }
+  }
+}
