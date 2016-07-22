@@ -9,7 +9,7 @@
     "test": "node test/*",
     "start": "DATABASE_URL=postgres:///cms node server.js",
     "debug": "node --debug-brk server.js",
-    "sass": "sass --watch sass/styles.scss:styles.css"
+    "sass": "sass --watch public/sass/styles.scss:public/styles.css"
   },
   "repository": {
     "type": "git",
