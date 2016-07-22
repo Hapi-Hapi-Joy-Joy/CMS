@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'navigation';
+@import 'form';
+@import 'buffer';
+@import 'blog';
+@import 'footer';
+
+body {
+  margin: 0px;
+  font-family: Arial,"Trebuchet MS", Helevetica ,sans-serif;
+}
+
+#header {
+  background-color: #ee6e73;
+}
