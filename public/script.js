@@ -23,12 +23,12 @@ function getPosts() {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
+      console.log(xhr.response);
     }
   }
   xhr.open("GET", "/getPosts", true);
   xhr.send();
 }
 
-// window.addEventListener('load', getPosts);
-
+window.addEventListener('load', getPosts);
 formButton.addEventListener('click', createPost);
