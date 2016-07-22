@@ -20,12 +20,13 @@ function createPost() {
 }
 
 function addNewPost(post) {
+  post = post.reverse();
   post.forEach((elem) => {
-    const blogpostContainer = document.getElementByClassName("blog-post-container")[0];
+    const blogpostContainer = document.getElementsByClassName("blog-post-container")[0];
 
     const titleContainer = document.createElement('div');
     const postId = document.createElement('h2');
-    const postIdContent = document.createTextNode(elem.postid);
+    const postIdContent = document.createTextNode('#' + elem.postid);
     postId.appendChild(postIdContent);
     postId.className = "post-id";
     const postTitle = document.createElement('h2');
@@ -37,17 +38,15 @@ function addNewPost(post) {
     titleContainer.className = "title-container";
 
     const timestampContainer = document.createElement('div');
-    const postUser = document.createElement('h2');
-    const postUserContent = document.createTextNode(elem.username);
-    postUser.appendChild(postUserContent);
+    const postUser = document.createElement('p');
+    postUser.innerHTML = `<p><b>${elem.username}</b></p>`;
     postUser.className = "post-user";
-    const postTimestamp = document.createElement('h2');
-    const postTimestampContent = document.createTextNode(elem.timestamp);
-    postTimestamp.appendChild(postTimestampContent);
-    postTimeStamp.className = "post-timestamp";
+    const postTimestamp = document.createElement('p');
+    postTimestamp.innerHTML = `<p><b>${elem.timestamp}</b></p>`;
+    postTimestamp.className = "post-timestamp";
     timestampContainer.appendChild(postUser);
     timestampContainer.appendChild(postTimestamp);
-    timestampContainer.clasName = "timestamp-container";
+    timestampContainer.className = "timestamp-container";
 
     const postContent = document.createElement('p');
     const postContentContent = document.createTextNode(elem.post);
