@@ -1,32 +1,15 @@
+@import 'variables';
+@import 'navigation';
+@import 'form';
+@import 'buffer';
+@import 'blog';
+@import 'footer';
+
 body {
   margin: 0px;
-  background-image: url('./wallpaper.jpg');
-  background-repeat: repeat;
+  font-family: Arial,"Trebuchet MS", Helevetica ,sans-serif;
 }
 
-#navigation {
-
-  background-color: pink;
-  border-radius: 8px;
-
-  ul {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-  }
-  li {
-    display: inline-block;
-    padding: 20px;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-img {
-  width: 100%;
-  height: auto;
+#header {
+  background-color: #ee6e73;
 }

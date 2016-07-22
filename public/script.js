@@ -1,20 +1,20 @@
-const postTitle = document.getElementById('post-title');
-const postContent = document.getElementById('post-content');
-const postButton = document.getElementById('post-button');
+const formTitle = document.getElementById('form-title');
+const formContent = document.getElementById('form-content');
+const formButton = document.getElementById('form-button');
 
 function createPost() {
   const xhr = new XMLHttpRequest();
   const postObj = {
-    title: postTitle.value,
-    content: postContent.value
+    title: formTitle.value,
+    content: formContent.value
   }
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      postTitle.value = '';
-      postContent.value = '';
+      formTitle.value = '';
+      formContent.value = '';
     }
   }
-  if (postContent.value === '') return;
+  if (formTitle === '' || formContent.value === '') return;
   xhr.open("POST", "/createPost", true);
   xhr.send(JSON.stringify(postObj));
 }
@@ -30,7 +30,5 @@ function getPosts() {
 }
 
 // window.addEventListener('load', getPosts);
-postButton.addEventListener('click', function (e) {
-  e.preventDefault();
-  createPost();
-});
+
+formButton.addEventListener('click', createPost);
